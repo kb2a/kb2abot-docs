@@ -7,7 +7,7 @@ module.exports = {
     title: 'KB2A Docs',
     tagline:
         'All the docs you need to know about KB2A products (currently KB2A Bot).',
-    url: 'https://your-docusaurus-test-site.com',
+    url: 'https://kb2abot-docs.netlify.app/',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
