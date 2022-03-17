@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # About
 
-kb2abot is a powerful Node.js module that allows you to easily interact with the Facebook Chat API and more!
+kb2abot is a powerful NodeJS module that allows you to easily interact with the Facebook Chat API and more!
 
 -   **Object-oriented**
 -   **Performant**
@@ -12,7 +12,7 @@ kb2abot is a powerful Node.js module that allows you to easily interact with the
 
 ## Installation
 
-Node.js 16.14.0 or newer is required.
+NodeJS 16.14.0 or newer is required.
 
 ```bash
 npm install kb2abot
@@ -85,7 +85,7 @@ class MyPlugin extends Plugin {
 const myPlugin = new MyPlugin()
 ```
 
-And we add that plugin to a plugin manager
+And we add that plugin to a plugin manager:
 
 ```js
 import { PluginManager } from 'kb2abot'
@@ -96,7 +96,7 @@ const pluginManager = new PluginManager(configDirectory, userdataDirectory)
 await pluginManager.add(myPlugin)
 ```
 
-Finally, now we add pluginManager to hook function:
+Finally, now we add plugin manager to hook function:
 
 ```js
 import { Deploy, Datastore } from 'kb2abot'
@@ -107,7 +107,7 @@ Datastore.init('./datastores') // If you dont init datastore, your bot will be f
 const botOptions = readHJSON('./bot.hjson') // Read and parse bot.hjson file (relative to cwd)
 ```
 
-botOptions is the options of your bot (see the example template at example-bot.hjson
+`botOptions` is the options of your bot (see the example template at `example-bot.hjson`):
 
 ```js
 const client = await Deploy.facebook(botOptions.credential, {

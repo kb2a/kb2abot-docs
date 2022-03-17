@@ -13,7 +13,7 @@ module.exports = {
     onBrokenMarkdownLinks: 'warn',
     favicon: 'icons/favicon.ico',
     organizationName: 'kb2ateam',
-    projectName: 'kb2a-docs',
+    projectName: 'kb2abot-docs',
     staticDirectories: ['public'],
     presets: [
         [
@@ -21,7 +21,8 @@ module.exports = {
             {
                 docs: {
                     sidebarPath: require.resolve('./sidebar.js'),
-                    editUrl: 'https://github.com/kb2ateam/kb2a-docs/tree/main/',
+                    editUrl:
+                        'https://github.com/kb2ateam/kb2abot-docs/tree/main/',
                 },
                 theme: {
                     customCss: require.resolve('./src/styles/custom.css'),

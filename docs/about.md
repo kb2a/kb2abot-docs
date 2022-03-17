@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # About
 
-kb2abot is a powerful Node.js module that allows you to easily interact with the Facebook Chat API and more!
+kb2abot is a powerful NodeJS module that allows you to easily interact with the Facebook Chat API and more!
 
 -   **Object-oriented**
 -   **Performant**
@@ -12,7 +12,7 @@ kb2abot is a powerful Node.js module that allows you to easily interact with the
 
 ## Installation
 
-Node.js 16.14.0 or newer is required.
+NodeJS 16.14.0 or newer is required.
 
 ```bash
 npm install kb2abot
