@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Common
 
-Common ultility functions.
+Take a look at common ultility functions.
 
 ## asyncWait(time)
 

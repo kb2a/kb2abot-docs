@@ -1,15 +1,16 @@
 // @ts-check
 
-const lightCodeTheme = require('prism-react-renderer/themes/nightOwlLight')
-const darkCodeTheme = require('prism-react-renderer/themes/nightOwl')
+const theme = require('prism-react-renderer/themes/nightOwlLight')
+const darkTheme = require('prism-react-renderer/themes/nightOwl')
+const sidebarPath = require.resolve('./src/utils/sidebar.js')
+const customCss = require.resolve('./src/styles/custom.css')
 
 module.exports = {
-    title: 'KB2A Docs',
-    tagline:
-        'All the docs you need to know about KB2A products (currently KB2A Bot).',
+    title: 'KB2ABot Docs',
+    tagline: 'All the docs you need to know about KB2ABot.',
     url: 'https://kb2abot-docs.netlify.app/',
     baseUrl: '/',
-    onBrokenLinks: 'throw',
+    onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'icons/favicon.ico',
     organizationName: 'kb2ateam',
@@ -20,12 +21,12 @@ module.exports = {
             'classic',
             {
                 docs: {
-                    sidebarPath: require.resolve('./sidebar.js'),
+                    sidebarPath,
                     editUrl:
                         'https://github.com/kb2ateam/kb2abot-docs/tree/main/',
                 },
                 theme: {
-                    customCss: require.resolve('./src/styles/custom.css'),
+                    customCss,
                 },
                 sitemap: {
                     changefreq: 'weekly',
@@ -35,10 +36,12 @@ module.exports = {
         ],
     ],
     themeConfig: {
+        metadata: [{ name: 'keywords', content: 'kb2abot' }],
         navbar: {
-            title: 'KB2A Docs',
+            title: 'KB2ABot Docs',
+            hideOnScroll: true,
             logo: {
-                alt: 'KB2A Docs',
+                alt: 'KB2ABot Docs',
                 src: 'icons/logo.svg',
             },
             items: [
@@ -75,20 +78,11 @@ module.exports = {
                         },
                     ],
                 },
-
-                {
-                    type: 'localeDropdown',
-                    position: 'right',
-                },
             ],
         },
         prism: {
-            theme: lightCodeTheme,
-            darkTheme: darkCodeTheme,
+            theme,
+            darkTheme,
         },
-    },
-    i18n: {
-        locales: ['en', 'vi'],
-        defaultLocale: 'en',
     },
 }

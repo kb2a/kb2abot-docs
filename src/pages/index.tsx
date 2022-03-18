@@ -1,9 +1,9 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
-import HomepageFeatures from '@site/src/components/HomepageFeatures'
 import Layout from '@theme/Layout'
 import React from 'react'
+import HomeFeatures from '../components/HomeFeatures'
 
-export default function Home(): JSX.Element {
+const Home = () => {
     const { title } = useDocusaurusContext().siteConfig
     return (
         <Layout
@@ -11,8 +11,10 @@ export default function Home(): JSX.Element {
             description='Description will go into a meta tag in <head />'
         >
             <main>
-                <HomepageFeatures />
+                <HomeFeatures />
             </main>
         </Layout>
     )
 }
+
+export default Home
